@@ -7,12 +7,24 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #0d1b2a;
+      color: #fff;
       text-align: center;
-      background: #f4f4f9;
       padding: 50px;
+      margin: 0;
     }
-    h1 {
-      color: #333;
+    header {
+      background: #1b263b;
+      padding: 15px;
+      border-bottom: 2px solid #ffcc00;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #ffcc00;
+    }
+    .content {
+      margin-top: 50px;
     }
     a.whatsapp-btn {
       display: inline-block;
@@ -27,18 +39,29 @@
     a.whatsapp-btn:hover {
       background-color: #1ebe5a;
     }
+    .logout {
+      display: block;
+      margin-top: 30px;
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to the Investigation Dashboard</h1>
-  <p>You are now logged in ✅</p>
+  <header>
+    <h1>FBI Investigation Dashboard</h1>
+  </header>
 
-  <!-- WhatsApp button -->
-  <a class="whatsapp-btn" href="https://wa.me/13072106889?text=Hello%2C%20I%20have%20a%20report%20to%20make" target="_blank">
-    📲 Send Message on WhatsApp
-  </a>
+  <div class="content">
+    <p>You are now logged in ✅</p>
 
-  <br><br>
-  <a href="index.html">Logout</a>
+    <!-- WhatsApp button -->
+    <a class="whatsapp-btn" href="https://wa.me/13072106889?text=Hello%2C%20I%20have%20a%20report%20to%20make" target="_blank">
+      📲 Send Message on WhatsApp
+    </a>
+
+    <a href="index.html" class="logout">Logout</a>
+  </div>
 </body>
 </html>
