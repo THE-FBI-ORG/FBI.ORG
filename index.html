@@ -15,33 +15,56 @@
     }
     header {
       padding: 20px;
+      border-bottom: 5px solid #ffcc00;
+      background-color: #102c54;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     }
     header img {
       width: 120px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
+      border: 3px solid #ffcc00;
+      border-radius: 8px;
+      padding: 5px;
+      background: white;
     }
     h1 {
       color: #ffcc00;
       margin: 10px 0;
+      font-size: 26px;
+      font-weight: bold;
+      text-transform: uppercase;
     }
     .content {
       margin-top: 30px;
+      padding: 0 15px;
+    }
+    .message {
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
     }
     .whatsapp-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
       background-color: #25D366;
       color: white;
-      border-radius: 5px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 22px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, background-color 0.2s ease;
     }
     .whatsapp-btn:hover {
       background-color: #1ebe5b;
+      transform: scale(1.02);
     }
     .arrow {
-      font-size: 40px;
+      font-size: 50px;
       color: #ffcc00;
       margin-top: 15px;
       animation: bounce 1s infinite;
@@ -60,11 +83,11 @@
   </header>
 
   <div class="content">
-    <p>Click the link below to report a crime ⬇️</p>
+    <p class="message">CLICK THE LINK BELOW TO REPORT A CRIME</p>
     <div class="arrow">⬇️</div>
 
     <!-- WhatsApp button -->
-    <a class="whatsapp-btn" href="https://wa.me/13072106889" target="_blank">📲 Send Message on WhatsApp</a>
+    <a class="whatsapp-btn" href="https://wa.me/13072106889" target="_blank">📲 SEND MESSAGE ON WHATSAPP</a>
   </div>
 </body>
 </html>
