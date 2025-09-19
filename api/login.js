@@ -3,9 +3,9 @@ export default function handler(req, res) {
     const { password } = req.body;
 
     if (password === process.env.ADMIN_PASSWORD) {
-      res.status(200).json({ message: "✅ Access granted. Welcome, Admin." });
+      res.status(200).json({ success: true });
     } else {
-      res.status(401).json({ message: "❌ Invalid password" });
+      res.status(401).json({ success: false });
     }
   } else {
     res.status(405).json({ message: "Method not allowed" });
