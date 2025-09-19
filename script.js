@@ -4,22 +4,17 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
 
   const response = await fetch("/api/login", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ password }),
   });
 
-  const result = await response.json();
-  const resultEl = document.getElementById("result");
+  const data = await response.json();
 
-  if (result.success) {
-    resultEl.textContent = "✅ Login successful!";
-    resultEl.style.color = "green";
-    // redirect after login
-    window.location.href = "/dashboard.html"; 
+  if (data.success) {
+    // ✅ Redirect to dashboard
+    window.location.href = "dashboard.html";
   } else {
-    resultEl.textContent = "❌ Wrong password!";
-    resultEl.style.color = "red";
+    document.getElementById("result").innerText = "❌ Wrong password!";
+    document.getElementById("result").style.color = "red";
   }
 });
