@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FBI Investigation Portal</title>
+  <title>Report a Crime</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -24,25 +24,6 @@
       color: #ffcc00;
       margin: 10px 0;
     }
-    form {
-      margin: 20px 0;
-    }
-    input[type="password"] {
-      padding: 10px;
-      margin: 10px 0;
-      width: 220px;
-      border: none;
-      border-radius: 5px;
-    }
-    button {
-      background-color: #ffcc00;
-      color: #0b1d3a;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
     .content {
       margin-top: 30px;
     }
@@ -59,6 +40,16 @@
     .whatsapp-btn:hover {
       background-color: #1ebe5b;
     }
+    .arrow {
+      font-size: 40px;
+      color: #ffcc00;
+      margin-top: 15px;
+      animation: bounce 1s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
   </style>
 </head>
 <body>
@@ -68,22 +59,12 @@
     <h1>FBI Investigation Portal</h1>
   </header>
 
-  <div class="container">
-    <form id="loginForm">
-      <input type="password" id="password" placeholder="Enter Admin Password" required>
-      <button type="submit">Login</button>
-    </form>
-    <p id="result"></p>
-  </div>
-
   <div class="content">
-    <h1>FBI Investigation Dashboard</h1>
-    <p>You are now logged in ✅</p>
+    <p>Click the link below to report a crime ⬇️</p>
+    <div class="arrow">⬇️</div>
 
     <!-- WhatsApp button -->
     <a class="whatsapp-btn" href="https://wa.me/13072106889" target="_blank">📲 Send Message on WhatsApp</a>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
